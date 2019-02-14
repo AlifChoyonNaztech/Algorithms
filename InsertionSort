@@ -1,0 +1,25 @@
+<script>
+a= [9,2,4,6,1,8]
+
+function insertionSort(a){
+var key=0;
+var i=0;
+for (var j=1 ; j<a.length ; j++){
+	key =a[j]
+    i=j-1
+    while(i>=0 && a[i]>key){
+    	a[i+1]=a[i]
+        i=i-1
+    
+    }
+    a[i+1]= key
+
+  
+}
+    return a;
+}
+
+a= insertionSort(a);
+
+console.log(a.toString())
+</script>
